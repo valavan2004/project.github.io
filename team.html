@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+ 
+  <style>
+
+  body {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_YaXzX9ZWTDlXkrYwnue9BT1e4ladLgLLFsfhNOqUZlofVw5UVxOzod4W7cJ6okaYpw&usqp=CU);
+  background-color: darkblue;
+  background-position: relative;
+  background-size: cover;
+  padding-top: 100px;
+  margin: 300px;
+  padding-left: 100px;
+  background-image:no-repeat;
+}
+h1{
+  color:darkgoldenrod;
+}
+.calculator {
+  width: 200px;
+  margin: 0 auto;
+ background-color:mediumpurple;s
+}
+
+.display {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  background-color:skyblue;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  color:darkred;
+}
+
+  </style>
+</head>
+<body>
+  <centre><hr><h1><b>CALCULATOR</b></hr></h1></centre>
+  <div class="calculator">
+    <input type="text" class="display" readonly>
+    <div class="buttons">
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button onclick="appendValue('+')">+</button>
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button onclick="appendValue('-')">-</button>
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('*')">*</button>
+      <button onclick="appendValue('0')">0</button>
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="appendValue('/')">/</button>
+    </div>
+  </div>
+
+  <script src="demo.js"></script>
+</body>
+</html>
